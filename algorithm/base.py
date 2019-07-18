@@ -21,6 +21,20 @@ class Recursion():
         else:
             return n * self.factorial(n - 1)
 
+    def fibonacci_sequence(self,n):
+        '''
+        斐波那契数列
+        :return: 数列
+        '''
+
+        list = []
+        a, b = 0, 1
+        while a < n:
+            list.append(a)
+            a, b = b, a +b
+        return list
+
+
     def getAllFiles(self,path,level):
         '''
         利用递归，展示目录树
@@ -44,7 +58,10 @@ class Recursion():
 
 if __name__ == '__main__':
     recursion = Recursion()
-    test = recursion.factorial(5)
-    print(test)
+    #test = recursion.factorial(5)
+    #print(test)
 
-    recursion.getAllFiles("/Users/work/code/python/Pythonbase/",0)
+    # recursion.getAllFiles("/Users/work/code/python/Pythonbase/",0)
+
+    list = recursion.fibonacci_sequence(100)
+    print(list)
