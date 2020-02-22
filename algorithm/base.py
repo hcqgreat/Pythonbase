@@ -10,7 +10,7 @@ class Recursion():
          递归体。解答:什么时候需要调用自身方法。
     '''
 
-    def factorial(self,n):
+    def factorial(self, n):
         '''
         利用递归算法，计算n的阶乘
         :param n:
@@ -21,7 +21,7 @@ class Recursion():
         else:
             return n * self.factorial(n - 1)
 
-    def fibonacci_sequence(self,n):
+    def fibonacci_sequence(self, n):
         '''
         斐波那契数列
         :return: 数列
@@ -35,7 +35,7 @@ class Recursion():
         return list
 
 
-    def getAllFiles(self,path,level):
+    def getAllFiles(self, path, level):
         '''
         利用递归，展示目录树
         :param path:
